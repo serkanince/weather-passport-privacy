@@ -41,6 +41,32 @@
             display: block;
             margin: 0 auto 20px;
         }
+
+        
+    .screenshot-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .screenshot-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .screenshot-grid img:hover {
+        transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+        .screenshot-grid {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+    }
     </style>
 </head>
 <body>
@@ -50,6 +76,7 @@
             <a href="#about">About</a>
             <a href="#features">Features</a>
             <a href="#how-it-works">How It Works</a>
+            <a href="#app-screenshots">Screnshots</a>
             <a href="#download">Download WeatherPassport</a>
             <a href="https://weatherpassport.serkanince.com/privacy" target="_blank">Privacy Policy</a>
         </nav>
@@ -72,6 +99,17 @@
         <section id="how-it-works">
             <h2>How It Works</h2>
             <p>Select your destination city and desired date range. Weather Passport fetches data from various APIs, processes it, and provides you with detailed weather insights. The app caches this data for offline access, ensuring you have the information you need, whenever you need it.</p>
+        </section>
+
+        <section id="app-screenshots">
+            <h2>App Screenshots</h2>
+            <div class="screenshot-grid">
+                <img src="https://raw.githubusercontent.com/serkanince/weather-passport-privacy/refs/heads/main/showcase/Orta%201.jpeg" alt="Screenshot 1">
+                <img src="https://raw.githubusercontent.com/serkanince/weather-passport-privacy/refs/heads/main/showcase/Orta%202.jpeg" alt="Screenshot 2">
+                <img src="https://raw.githubusercontent.com/serkanince/weather-passport-privacy/refs/heads/main/showcase/Orta%203.jpeg" alt="Screenshot 3">
+                <img src="https://raw.githubusercontent.com/serkanince/weather-passport-privacy/refs/heads/main/showcase/Orta%204.jpeg" alt="Screenshot 4">
+                <img src="https://raw.githubusercontent.com/serkanince/weather-passport-privacy/refs/heads/main/showcase/Orta%205.jpeg" alt="Screenshot 5">
+            </div>
         </section>
         
         <section id="download">
