@@ -3,101 +3,161 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Weather Passport Privacy Policy</title>
+    <title>Weather Passport - Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #02569B;
+            --accent-color: #00B4DB;
+            --text-color: #2c3e50;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: var(--bg-color);
+            color: var(--text-color);
         }
+
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
-        h1, h2 {
-            color: #02569B;
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
         }
-        img {
-            display: block;
-            margin: 0 auto 20px;
+
+        header img {
+            width: 100px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        p, li {
+            font-size: 1.05rem;
+            color: #546e7a;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
         a {
-            color: #02569B;
+            color: var(--accent-color);
             text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eef2f7;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 25px;
+            }
+            h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://raw.githubusercontent.com/serkanince/weather-passport-privacy/refs/heads/main/logo.png" alt="Weather Passport Logo" width="200"/>
-        <h1>Weather Passport Privacy Policy</h1>
-        <p>Welcome to Weather Passport, your ultimate travel planning weather application. This privacy policy outlines how we collect, use, and protect your information when you use our app. Developed by Serkan İnce.</p>
+        <header>
+            <img src="https://raw.githubusercontent.com/serkanince/weather-passport-privacy/refs/heads/main/logo.png" alt="Weather Passport Logo"/>
+            <h1>Privacy Policy</h1>
+        </header>
+        
+        <p>Welcome to <strong>Weather Passport</strong>, your ultimate travel planning weather application. This privacy policy outlines how we collect, use, and protect your information when you use our app. Developed by Serkan İnce.</p>
         
         <h2>Information We Collect</h2>
         <p>We collect information to provide better services to our users. This includes:</p>
         <ul>
-            <li>Personal information such as email address for authentication purposes.</li>
-            <li>Usage data to improve app functionality and user experience.</li>
+            <li><strong>Personal Information:</strong> Email address for authentication purposes.</li>
+            <li><strong>Usage Data:</strong> Anonymous statistics to improve app functionality and user experience.</li>
         </ul>
-        <p>For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information. The information that we request will be retained by us and used as described in this privacy policy.</p>
-        <p>The app does use third-party services that may collect information used to identify you. Below are links to the privacy policies of third-party service providers used by the app:</p>
+        <p>The app uses third-party services that may collect information used to identify you. Below are links to the privacy policies of third-party service providers used by the app:</p>
         <ul>
             <li><a href="https://marketingplatform.google.com/about/analytics/terms/us/" target="_blank">Google Analytics for Firebase</a></li>
             <li><a href="https://firebase.google.com/support/privacy/" target="_blank">Firebase Crashlytics</a></li>
         </ul>
+
         <h2>Log Data</h2>
-        <p>We want to inform you that whenever you use our Service, in case of an error in the app, we collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.</p>
+        <p>In case of an error in the app, we collect data and information (through third-party products) on your phone called Log Data. This may include your device IP address, device name, operating system version, the configuration of the app, and other statistics.</p>
         
         <h2>How We Use Your Information</h2>
-        <p>Your information is used to:</p>
         <ul>
             <li>Provide personalized weather forecasts and travel advice.</li>
             <li>Improve our app and develop new features.</li>
-            <li>Communicate with you about updates and offers.</li>
+            <li>Communicate with you about critical updates.</li>
         </ul>
         
-        <h2>Authentication Methods</h2>
-        <p>We support Google Sign-In, Apple Sign-In, and Email/Password for login and registration processes.</p>
+        <h2>Authentication</h2>
+        <p>We support <strong>Google Sign-In</strong>, <strong>Apple Sign-In</strong>, and <strong>Email/Password</strong> for secure login and data synchronization via Firebase.</p>
         
-        <h2>Advertising</h2>
-        <p>We use Google AdMob to serve ads in our application. For more information on how Google collects and uses your data, please visit the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</p>
-        
-        <h2>In-App Purchases</h2>
-        <p>Our app offers in-app purchases through Apple. For more information on Apple's privacy practices, please visit the <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a>.</p>
+        <h2>Advertising & Subscriptions</h2>
+        <p>We use <strong>Google AdMob</strong> for advertisements and <strong>RevenueCat</strong> for managing premium subscriptions. For more details, see their respective privacy policies.</p>
         
         <h2>Data Security</h2>
-        <p>We are committed to protecting your data. We use industry-standard security measures to safeguard your information.</p>
+        <p>We are committed to protecting your data. We use industry-standard security measures, including Firebase's secure infrastructure, to safeguard your information.</p>
 
         <h2>Account Deletion</h2>
-        <p>Users can permanently delete their account information through the following steps:</p>
+        <p>Users can permanently delete their account and all associated data through the in-app settings:</p>
         <ol>
-            <li>Go to the in-app Settings menu</li>
-            <li>Select "Support & Feedback" section</li>
-            <li>Click "Delete Account" option</li>
+            <li>Go to the <strong>Settings</strong> menu.</li>
+            <li>Select the <strong>Support & Feedback</strong> section.</li>
+            <li>Tap <strong>Delete Account</strong>.</li>
         </ol>
-        <p>The account deletion process:
-            <ul>
-                <li>Permanently removes all your personal data</li>
-                <li>Is an irreversible action</li>
-                <li>Does not require additional customer service approval</li>
-                <li>Includes a final confirmation step to prevent accidental deletion</li>
-            </ul>
-        </p>
-        
-        <h2>Third-Party Services</h2>
-        <p>We may share your information with third-party services for analytics and advertising purposes. These services are bound by confidentiality obligations.</p>
-        
-        <h2>Changes to This Policy</h2>
-        <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page.</p>
+        <p>Deletion is permanent and removes all personal data from our systems immediately.</p>
         
         <h2>Contact Us</h2>
-        <p>If you have any questions about this privacy policy, please contact us at pandifapp@gmail.com.</p>
+        <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:pandifapp@gmail.com">pandifapp@gmail.com</a>.</p>
+
+        <footer>
+            <p>&copy; 2024 Weather Passport. All rights reserved.</p>
+            <p>Follow <a href="https://www.linkedin.com/in/serkan-ince/" target="_blank">Serkan İnce on LinkedIn</a></p>
+        </footer>
     </div>
 </body>
 </html>
